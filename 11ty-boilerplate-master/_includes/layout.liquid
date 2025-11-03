@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }} | Everyday Carry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles/screen.css">
+</head>
+<body>
+  <header class="tab-header">
+    <div class="wrap tab-inner">
+      <nav>
+        <ul class="tab-nav">
+          <li><a href="/" class="{% if title == 'Everyday Carry' %}active{% endif %}">Home</a></li>
+          <li><a href="/phone/" class="{% if title == 'Phone' %}active{% endif %}">Phone</a></li>
+          <li><a href="/airpods/" class="{% if title == 'AirPods' %}active{% endif %}">AirPods</a></li>
+          <li><a href="/keys/" class="{% if title == 'Keys' %}active{% endif %}">Keys</a></li>
+          <li><a href="/about/" class="{% if title == 'About' %}active{% endif %}">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap page">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p>Keven`s Everyday Carries</p>
+  </footer>
+</body>
+</html>
