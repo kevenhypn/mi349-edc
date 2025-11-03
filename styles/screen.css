@@ -12,6 +12,8 @@ body {
     background: var(--bg);
     color: var(--text);
     font-family: Helvetica, Arial, sans-serif;
+    padding-left: 20px; 
+    padding-right: 20px;
 }
 
 .wrap {
@@ -113,11 +115,15 @@ body {
     padding: 16px 14px 14px 14px;
 }
 
-.edc-card h2 { margin: 0 0 4px 0; }
+.edc-card h2 {
+    margin: 0 0 4px 0;
+    padding-right: 64px;
+}
 
 .edc-card p {
     margin: 0 0 14px 0;
     color: var(--muted);
+    padding-right: 64px; 
 }
 
 .btn {
